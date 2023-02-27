@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+.container {
+  height: 100vh;
+  text-align: center;
+  background-color: #eee;
+}
+
+h1 {
+  font-size: 6rem;
+  padding: 150px 0 50px 0;
+}
+
+div {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 4px #ddd;
+}
+
+dt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+  color: #444;
+}
+dt::after {
+  cursor: pointer;
+  content: '';
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: url(assets/icons8-mais-2-matemática-32.png);
+  transition: 0.3s;
+}
+dt.active::after {
+  transform: rotate(180deg);
+  transition: 0.3s;
+}
+
+dd {
+  border-top: 2px solid #eee;
+  padding-top: 10px;
+  font-size: 1.2rem;
+  text-align: left;
+  color: #aaa;
+  display: none;
+}
+dd.active {
+  display: block;
+  animation: animaAcordion 0.5s forwards;
+}
+
+@keyframes animaAcordion {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 200px;
+  }
+}
