@@ -1,0 +1,56 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+  margin-top: 100px;
+  font-size: 4rem;
+  text-align: center;
+}
+
+form {
+  max-width: 800px;
+  margin: 0px auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+label {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  letter-spacing: 0.5rem;
+}
+input {
+  width: 60px;
+  font-size: 1.2rem;
+  padding: 5px;
+  border-radius: 4px;
+  margin: 5px;
+}
+button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  background-color: aqua;
+  cursor: pointer;
+  letter-spacing: 0.2rem;
+}
+.paragrafos {
+  max-width: 800px;
+
+  margin: 50px auto;
+  text-align: center;
+}
+p {
+  margin-top: 40px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}

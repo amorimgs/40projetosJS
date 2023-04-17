@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+body {
+  background-color: #bbb;
+}
+h1 {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 4rem;
+}
+.alert {
+  text-align: center;
+  font-size: 1.2rem;
+  max-width: 300px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+form {
+  margin: 20px auto;
+  max-width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+input {
+  height: 50px;
+  width: 400px;
+  border-radius: 25px 0 0 25px;
+  padding-left: 30px;
+  border: none;
+}
+.submit {
+  height: 50px;
+  width: 70px;
+  border-radius: 0 25px 25px 0;
+  border: none;
+  cursor: pointer;
+}
+.submit:hover {
+  background-color: green;
+  color: #fff;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  max-width: 700px;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+.list {
+  padding-top: 10px;
+  width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.item {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  padding: 5px;
+  border-radius: 15px;
+}
+.item:hover {
+  background-color: #bbb;
+}
+.item p {
+  font-size: 1.2rem;
+  padding-left: 10px;
+}
+.editar {
+  color: green;
+  border: none;
+  font-weight: bold;
+  background-color: unset;
+  text-transform: uppercase;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.remover {
+  color: red;
+  border: none;
+  font-weight: bold;
+  background-color: unset;
+  text-transform: uppercase;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.limparLista {
+  color: red;
+  text-align: center;
+  margin-top: 30px;
+  width: 140px;
+  border: none;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 10px 20px;
+  cursor: pointer;
+  visibility: hidden;
+}
+.on {
+  visibility: visible;
+}
+.alertError {
+  background-color: red;
+  color: black;
+}
+.sucess {
+  background-color: green;
+}
